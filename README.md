@@ -7,3 +7,4 @@ My primary goal is to be able to revise the PHP language without wasting too muc
 ## Topics
 
 - [Introduction](./introduction)
+- [Types](./types/)
