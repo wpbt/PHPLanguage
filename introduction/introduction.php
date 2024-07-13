@@ -8,3 +8,16 @@ $name       = '';
 $count      = 0;
 $colors     = array( 'Red', 'Yellos' );
 $indexes    = array( 11, 14, 99 );
+
+// defining constant
+const PI = 3.1415;
+
+# defining a class
+class ClassName {
+
+}
+
+// defining a function
+function functionName() {
+
+}

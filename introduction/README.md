@@ -69,5 +69,6 @@ Multi line comment:
 - Some common naming conventions:
   - CamelCase / camelCase
   - snake_case / Snake_Case
-- For classes, use CamelCase technique (you can use \_ to separate words).
-- For constants, use UPPER_CASE convention.
+- For classes, use _CamelCase_ technique (you can use \_ to separate words).
+- For constants, use _UPPER_CASE_ convention.
+- For functions, use _functionName_ convention.
