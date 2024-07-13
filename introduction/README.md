@@ -4,11 +4,7 @@ PHP is a simple and dynamic language used primarily in web development.
 
 ## Dynamic vs Static languages
 
-### Dynamic language
-
-Dynamic languages doesn't require you to define the variables type during their definition.
-
-### Static language
+Dynamic languages doesn't require you to define the type (int or float or string) during their definition.
 
 Static languages require you to define the type (number, string) during their definition.
 
@@ -16,15 +12,15 @@ Static languages require you to define the type (number, string) during their de
 
 ## Features of PHP
 
-- PHP is open source / platform independent and easy to learn.
+- PHP is open source, platform independent, and easy to learn programming language.
 
 - Full form: PHP Hypertext Preprocessor (it's a recursive acronym)
 
-- File extension: .php
+- File extension: **.php**
 
-- Opening tag: <?php
+- Opening tag: **<?php**
 
-- Closing tag: ?>
+- Closing tag: **?>**
 
 - Only the code between <?php and ?> is processed/interpreted and rest is ignored or output as it is. This makes easy for users to embed PHP and HTML in a single file.
 
@@ -38,6 +34,7 @@ Static languages require you to define the type (number, string) during their de
 
 - PHP can be used to send emails.
 - It's always a good practice to omit the closing tag (**?>**) at the end of the php file.
+- PHP statements are terminated usig a semicolon (**;**).
 
 ## Comments in php
 
@@ -45,6 +42,7 @@ Single line comment:
 
 ```sh
 // this is a single line comment
+# This is also a single line comment.
 ```
 
 Multi line comment:
