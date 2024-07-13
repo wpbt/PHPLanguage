@@ -4,11 +4,11 @@ PHP is a simple and dynamic language used primarily in web development.
 
 ## Dynamic vs Static languages
 
-Dynamic languages doesn't require you to define the type (int or float or string) during their definition.
+Dynamic languages don't require you to define the type (e.g., int, float, or string) during variable declaration.
 
-Static languages require you to define the type (number, string) during their definition.
+Static languages require you to define the type (e.g., int, float, or string) during variable declaration.
 
-**In general, static programs are more performant.**
+**In general, programs written in statically-typed languages are more performant.**
 
 ## Features of PHP
 
