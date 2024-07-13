@@ -22,7 +22,7 @@ Static languages require you to define the type (e.g., int, float, or string) du
 
 - Closing tag: **?>**
 
-- Only the code between PHP tags (_<?php ?>_) is processed/interpreted and rest is ignored or output as it is. This makes easy for users to embed PHP and HTML in a single file.
+- Only the code between PHP tags _<?php ?>_ is processed/interpreted and rest is ignored or output as it is. This makes easy for users to embed PHP and HTML in a single file.
 
 - PHP is executed on server only.
 
