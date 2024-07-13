@@ -57,6 +57,17 @@ Multi line comment:
 ## Variable Declaration
 
 - In PHP, variables start with a dollar sign **($)**.
+
 - After **$**, you can't use number.
+
 - You can only use : **Aa-Zz, 0-9, and \_ (underscore)** in a variable name.
+
 - **Tip:** use meaningful names to declare variables and indent properly for readability.
+
+- Always stick to same naming convention throughout the project.
+
+- Some common naming conventions:
+  - CamelCase / camelCase
+  - snake_case / Snake_Case
+- For classes, use CamelCase technique (you can use \_ to separate words).
+- For constants, use UPPER_CASE convention.
