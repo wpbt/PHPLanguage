@@ -36,3 +36,7 @@ function sumResult(int $a, int $b): int {
 
 // Example usage:
 echo sumResult(3, 5); // Outputs: 8
+
+$firstName = 'John';
+$lastName = 'Doe';
+$fullName = "Full name: $firstName  $lastName";
