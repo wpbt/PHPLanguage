@@ -47,7 +47,7 @@ $fullName = "Full name: $firstName  $lastName";
 
 $juice = 'apple';
 echo "He drank some juice made of {$juice}s.";
-# you can also embed: array items (using index: $arr[n]) and object properties
+# you can also embed: array items (using index/key: $arr[n]) and object properties
 ```
 
 - PHP provides many builtin function to work with strings
@@ -58,7 +58,7 @@ echo "He drank some juice made of {$juice}s.";
 
 ## PHP Arrays
 
-An array can be created using: `array()` construct.
+An array can be created using: `array()` (or short: `[]`) construct.
 
 ```sh
 // Create an array
