@@ -20,3 +20,12 @@ My primary goal is to be able to revise the PHP language without wasting too muc
 - I also used ChatGPT to simplify the descriptions.
 - This document may contain errors. If you find any errors, please report it at admin@bharatt.com.np
 - This document is for learning purpose only.
+
+## Some Basic Insights
+
+- A computer program is a set of instruction to do a specific task. E.g.: add two numbers.
+- We combine smaller pieces in programs to solve complex problems. So, always create smaller chunks of tasks and connect them later to perform much complex tasks.
+- A programming language is designed with some specific problem solving capability in mind. Don't be picky! Just choose the right tool to fix the problem.
+- In programming, it's impossible to remember everything.
+- Always revise the knowledge. In doing so, you will always learn something new again.
+- Instead of writing a new function from scratch, always try to find the inbuilt function (they are much faster than the custom functions).
