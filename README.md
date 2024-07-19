@@ -29,3 +29,7 @@ My primary goal is to be able to revise the PHP language without wasting too muc
 - In programming, it's impossible to remember everything.
 - Always revise the knowledge. In doing so, you will always learn something new again.
 - Instead of writing a new function from scratch, always try to find the inbuilt function (they are much faster than the custom functions).
+- Go from basic to advanced.
+- There is always some room for improvement.
+- In programming, don't try to be a perfectionist.
+- Make it work first then optimize later is the rule in any profession.
