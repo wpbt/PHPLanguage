@@ -33,3 +33,4 @@ My primary goal is to be able to revise the PHP language without wasting too muc
 - There is always some room for improvement.
 - In programming, don't try to be a perfectionist.
 - Make it work first then optimize later is the rule in any profession.
+- Organize your code: functions -> related files
