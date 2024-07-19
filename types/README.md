@@ -55,6 +55,8 @@ echo "He drank some juice made of {$juice}s.";
   - `trim()`: remove whitespaces from both sides of the string.
   - `explode()`: split a string into an array.
   - `strtolower() / strtoupper()`: convert string case.
+  - `substr()`: Extract part of a string
+  - `str_replace()`: Replace all occurrences of a substring
 
 ## PHP Arrays
 
