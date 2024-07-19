@@ -9,6 +9,7 @@ My primary goal is to be able to revise the PHP language without wasting too muc
 - [Introduction](./introduction)
 - [Types](./types/)
 - [Variables](./variables/)
+- [Constants](./constants/)
 
 ## Note
 
