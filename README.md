@@ -10,6 +10,9 @@ My primary goal is to be able to revise the PHP language without wasting too muc
 - [Types](./types/)
 - [Variables](./variables/)
 - [Constants](./constants/)
+- [Operators](./operators/)
+- [Control Structures](./control_structures/)
+- [Functions](./functions/)
 
 ## Note
 

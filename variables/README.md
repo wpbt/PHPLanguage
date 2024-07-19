@@ -47,3 +47,19 @@ function getCount() {
 ```
 
 - Just one note regarding `static` variable: you shouldn't assign a dynamic expression as it's value because the static declarations are resolved in compile time.
+
+## Superglobals
+
+Built-in PHP variable which can be accessed anywhere in PHP environment.
+
+Examples:
+
+- `$GLOBALS`
+- `$_SERVER`
+- `$_GET`
+- `$_POST`
+- `$_FILES`
+- `$_COOKIE`
+- `$_SESSION`
+- `$_REQUEST`
+- `$_ENV`
