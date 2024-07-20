@@ -91,3 +91,12 @@ $greet = function($name) {
 $greet('World');
 $greet('PHP');
 ```
+
+## Arrow Functions
+
+- Arrow functions were introduced in PHP 7.4
+- Arrow functions are implemented using the Closure class.
+
+## First class callable syntax
+
+- The first class callable syntax is introduced as of PHP 8.1.0, as a way of creating anonymous functions from callable.
