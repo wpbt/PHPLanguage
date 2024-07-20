@@ -13,6 +13,7 @@ My primary goal is to be able to revise the PHP language without wasting too muc
 - [Operators](./operators/)
 - [Control Structures](./control_structures/)
 - [Functions](./functions/)
+- [Classes & Objects](./oop)
 
 ## Note
 
