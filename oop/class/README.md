@@ -154,3 +154,54 @@ echo ChildExample::PUBLIC_CONSTANT; // Outputs: new public value
 - Abstract (`abstract`) methods doesn't have the implementation detail. They are implemented in extending classes.
 - Methods with `final` keyword can not be overridden in sub-class.
 - PHP also has a concept of magic methods.
+
+## Constructor
+
+- Used for initializations and object setup.
+- To call parent class's constructor use: `parent::__construct()`
+- A constructor can take multiple parameters to initialize various properties of the object.
+- Constructors can also have parameters with default values, allowing you to create objects with default or optional initialization.
+
+## Destructor
+
+- Complementing the constructor, PHP also provides a destructor method (`__destruct`) that is called when an object is destroyed or the script ends. This method is useful for cleanup tasks.
+
+```php
+class Example {
+    public function __construct() {
+        echo "Object created.\n";
+    }
+
+    public function __destruct() {
+        echo "Object destroyed.\n";
+    }
+}
+
+$example = new Example();
+// Outputs: Object created.
+// Outputs: Object destroyed. (when the script ends or the object is destroyed)
+```
+
+## Constructor Promotion
+
+- As of PHP 8.0.0, constructor parameters may also be promoted to correspond to an object property.
+
+Example:
+
+```php
+// without constructor promotion
+class Point {
+    protected int $x;
+    protected int $y;
+
+    public function __construct(int $x, int $y = 0) {
+        $this->x = $x;
+        $this->y = $y;
+    }
+}
+// with constructor promotion (as of PHP 8.0)
+class Point {
+    public function __construct(protected int $x, protected int $y = 0) {
+    }
+}
+```
