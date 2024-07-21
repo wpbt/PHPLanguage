@@ -111,3 +111,46 @@ unset($example->dynamicProperty); // Using __unset()
 var_dump(isset($example->dynamicProperty)); // Using __isset(), Outputs: bool(false)
 
 ```
+
+## Class Constants
+
+- Class constants can be redefined by a child class.
+- If you use `final` keyword on a constant, it can not be reset / overridden in child class.
+- Class constants are created on class basis not per object basis.
+- You can also apply visibility modifiers on constants (public/protected/private).
+
+```php
+class Example {
+    public const PUBLIC_CONSTANT = 'public value';
+    protected const PROTECTED_CONSTANT = 'protected value';
+    private const PRIVATE_CONSTANT = 'private value';
+    final public const FINAL_CONSTANT = 'cannot be overridden';
+
+    public static function showConstants() {
+        echo self::PUBLIC_CONSTANT . "\n";
+        echo self::PROTECTED_CONSTANT . "\n";
+        echo self::PRIVATE_CONSTANT . "\n";
+        echo self::FINAL_CONSTANT . "\n";
+    }
+}
+
+class ChildExample extends Example {
+    // Redefining public constant
+    public const PUBLIC_CONSTANT = 'new public value';
+
+    // Attempt to override final constant will cause an error
+    // final public const FINAL_CONSTANT = 'new value';
+}
+
+Example::showConstants(); // Accessing constants from the Example class
+echo ChildExample::PUBLIC_CONSTANT; // Outputs: new public value
+```
+
+## Class Methods
+
+- They add functionality to the class and work on properties.
+- Can be set as: `public`, `protected`, `private`, `static`
+- Static methods belong to class itself.
+- Abstract (`abstract`) methods doesn't have the implementation detail. They are implemented in extending classes.
+- Methods with `final` keyword can not be overridden in sub-class.
+- PHP also has a concept of magic methods.
