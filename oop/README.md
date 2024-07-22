@@ -26,4 +26,4 @@
 
 ## Further Topics
 
-[Class](./class/)
+[Class](./class/) -> [Inheritance](./inheritance/)
