@@ -160,6 +160,39 @@ echo ChildExample::PUBLIC_CONSTANT; // Outputs: new public value
 - To call parent class's constructor use: `parent::__construct()`
 - A constructor can take multiple parameters to initialize various properties of the object.
 - Constructors can also have parameters with default values, allowing you to create objects with default or optional initialization.
+- If you set the `__construct()` as private, you can't initialize the class using `new`.
+  - You can use a method insie the class to return the object.
+  - This concept is implemented in Singleton of Factory design pattern.
+  - You can control how and when the objects are created.
+  - Centralizes the initialization logic in one place.
+
+```php
+class Singleton {
+    private static $instance;
+
+    // Private constructor prevents direct instantiation
+    private function __construct() {
+        // Initialize the instance
+    }
+
+    // Method to return the single instance
+    public static function getInstance() {
+        if (self::$instance === null) {
+            self::$instance = new self();
+        }
+        return self::$instance;
+    }
+
+    // Prevent cloning of the instance
+    private function __clone() {}
+
+    // Prevent unserializing of the instance
+    private function __wakeup() {}
+}
+
+// Usage
+$instance = Singleton::getInstance();
+```
 
 ## Destructor
 
