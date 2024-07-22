@@ -154,6 +154,15 @@ echo ChildExample::PUBLIC_CONSTANT; // Outputs: new public value
 - Methods with `final` keyword can not be overridden in sub-class.
 - PHP also has a concept of magic methods.
 
+## Visibility
+
+- **Public:** Accessible from anywhere in the script.
+- **Protected:** Accessible within the class and its subclasses.
+- **Private:** Accessible only within the class, not in subclasses.
+- **final:**
+  - Properties/Methods: Prevents overriding.
+  - Classes: Prevents extending.
+
 ## Constructor
 
 - Used for initializations and object setup.
