@@ -160,7 +160,7 @@ echo ChildExample::PUBLIC_CONSTANT; // Outputs: new public value
 - **Protected:** Accessible within the class and its subclasses.
 - **Private:** Accessible only within the class, not in subclasses.
 - **final:**
-  - Properties/Methods: Prevents overriding.
+  - Properties/Methods/Constants: Prevents overriding.
   - Classes: Prevents extending.
 
 ## Constructor
