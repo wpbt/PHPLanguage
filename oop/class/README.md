@@ -246,3 +246,23 @@ class Point {
     }
 }
 ```
+
+## Autoloading Classes
+
+- Class autoloading in PHP is a technique that allows you to automatically load class files without explicitly including them. It makes code clean.
+- When you try to use a class that hasn't been defined yet, PHP triggers the autoloading mechanism. You can register one or more autoload functions that PHP will call to load the missing class.
+- **PSR-4 Autoloading Standard:** It maps namespaces to directory structures, making it easy to organize and autoload classes.
+  - You can use composer to handle autoloading classes in PHP.
+  - [Visit Composer Doc](https://getcomposer.org/doc/01-basic-usage.md#autoloading) for more information.
+
+```php
+function my_autoloader($class) {
+    include 'classes/' . $class . '.class.php';
+}
+spl_autoload_register('my_autoloader');
+// or
+spl_autoload_register(function ($class) {
+    include 'classes/' . $class . '.class.php';
+});
+
+```
