@@ -266,3 +266,7 @@ spl_autoload_register(function ($class) {
 });
 
 ```
+
+# Further Topics in OOP
+
+- [Inheritance](../inheritance/)
