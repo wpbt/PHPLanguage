@@ -50,7 +50,6 @@ $obj = new  ClassName(); // or new ClassName;
 - **Typed Properties:** You can declare the type of a property (`string`, `int`, `array`, etc.) starting from PHP 7.4.
 - **Initialization Requirement:** Typed properties must be initialized before accessing them; otherwise, a fatal error will be thrown.
 - **Avoid Function Calls:** When initializing properties, avoid using function calls to ensure predictable behavior.
--
 
 ```php
 class Example {
