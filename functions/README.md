@@ -2,6 +2,8 @@
 
 Functions are fundamental concepts in programming. They encapsulate repetitive tasks, allowing for reuse throughout the application.
 
+**It's a great idea to keep application functions in a separate file. You can include that file where those functions are used in the application.**
+
 Syntax:
 
 ```php
@@ -20,7 +22,7 @@ functionName( /* Supply arguments here as defined in the function defn. */ );
 
 - Functions need to be defined before they are referenced.
 - You can nest functions within other functions. The caveat is that the inner function won't be available until the outer function is called.
-- A function can contain any piece of logic, class.
+- A function can contain any piece of logic, class, constants, variables, and even functions.
 - All functions and classes in PHP have the global scope - they can be called outside a function even if they were defined inside and vice versa.
 - PHP does not support function overloading, nor is it possible to undefine or redefine previously-declared functions.
 - Function names are case-insensitive but this doesn't mean you should do it. Call them as they were defined.
