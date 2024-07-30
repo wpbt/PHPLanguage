@@ -34,7 +34,7 @@ echo PHP_EOL;
  * Optional argument example!
  * 
  * This one is correct!
- * Note: optional arg should be declared at last!
+ * Note: optional arg should be declared at last (or after the required parameters)!
  */
 function makeYogurt( $flavour, $container = "bowl" ) {
     return "Making a $container of $flavour yogurt.\n";
@@ -76,3 +76,24 @@ $fibonacciSeries = fibonacciSeries( 0, 10 );
 
 echo "Fibonacci series from 0 to 10: " . implode( ', ', $fibonacciSeries );
 echo PHP_EOL;
+
+/**
+ * Passing objects as arguments example.
+ */
+class DefaultCoffeeMaker {
+    public function brew() {
+        return "Making coffee.\n";
+    }
+}
+class FancyCoffeeMaker {
+    public function brew() {
+        return "Crafting a beautiful coffee just for you.\n";
+    }
+}
+
+function makecoffee($coffeeMaker = new DefaultCoffeeMaker) {
+    return $coffeeMaker->brew();
+}
+
+echo makecoffee();
+echo makecoffee(new FancyCoffeeMaker);

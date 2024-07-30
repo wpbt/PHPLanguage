@@ -29,15 +29,24 @@ functionName( /* Supply arguments here as defined in the function defn. */ );
 
 ## Function Arguments
 
+- Function(s) work with argument(s) to generate desired output.
 - The arguments are evaluated from left to right, before the function is actually called.
 - PHP supports passing arguments by:
-  - value
+  - value (default)
   - reference
   - default argument values.
   - variable length argument list.
   - named arguments (supported)
 - Any optional arguments should be specified after any required arguments, otherwise they cannot be omitted from calls.
 - The default value must be a constant expression, not (for example) a variable, a class member or a function call.
+
+## Default Arguments
+
+- Default argument can have:
+  - scalar values.
+  - array values,
+  - null values,
+  - and objects using syntax: new ClassName() (supported as of PHP 8.1)
 
 ## Named argument
 
