@@ -11,6 +11,7 @@ $indexes    = array( 11, 14, 99 );
 
 // defining constant
 const PI = 3.1415;
+define( 'RATE', 3.0 );
 
 # defining a class
 class ClassName {

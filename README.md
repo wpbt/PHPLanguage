@@ -24,7 +24,7 @@ My primary goal is to be able to revise the PHP language without wasting too muc
 
 ## Some Basic Insights
 
-- A computer program is a set of instruction to do a specific task. E.g.: process file, read database, process form, etc.
+- A computer program is a set of instruction to do a specific task. E.g.: process file, connect to database, process form, etc.
 - We combine smaller pieces in programs to solve complex problems. So, always create smaller chunks of tasks and connect them later to perform much complex tasks.
 - A programming language is designed with some specific problem solving capability in mind. Don't be picky! Just choose the right tool to fix the problem.
 - In programming, it's impossible to remember everything.
