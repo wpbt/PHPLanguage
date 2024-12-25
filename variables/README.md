@@ -63,3 +63,43 @@ Examples:
 - `$_SESSION`
 - `$_REQUEST`
 - `$_ENV`
+
+## Variable handling Functions
+
+- boolval — Get the boolean value of a variable
+- debug_zval_dump — Dumps a string representation of an internal zval structure to output
+- doubleval — Alias of floatval
+- empty — Determine whether a variable is empty
+- floatval — Get float value of a variable
+- get_debug_type — Gets the type name of a variable in a way that is suitable for debugging
+- get_defined_vars — Returns an array of all defined variables
+- get_resource_id — Returns an integer identifier for the given resource
+- get_resource_type — Returns the resource type
+- gettype — Get the type of a variable
+- intval — Get the integer value of a variable
+- is_array — Finds whether a variable is an array
+- is_bool — Finds out whether a variable is a boolean
+- is_callable — Verify that a value can be called as a function from the current scope
+- is_countable — Verify that the contents of a variable is a countable value
+- is_double — Alias of is_float
+- is_float — Finds whether the type of a variable is float
+- is_int — Find whether the type of a variable is integer
+- is_integer — Alias of is_int
+- is_iterable — Verify that the contents of a variable is an iterable value
+- is_long — Alias of is_int
+- is_null — Finds whether a variable is null
+- is_numeric — Finds whether a variable is a number or a numeric string
+- is_object — Finds whether a variable is an object
+- is_real — Alias of is_float
+- is_resource — Finds whether a variable is a resource
+- is_scalar — Finds whether a variable is a scalar
+- is_string — Find whether the type of a variable is string
+- isset — Determine if a variable is declared and is different than null
+- print_r — Prints human-readable information about a variable
+- serialize — Generates a storable representation of a value
+- settype — Set the type of a variable
+- strval — Get string value of a variable
+- unserialize — Creates a PHP value from a stored representation
+- unset — Unset a given variable
+- var_dump — Dumps information about a variable
+- var_export — Outputs or returns a parsable string representation of a variable

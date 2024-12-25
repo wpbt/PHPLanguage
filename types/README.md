@@ -53,6 +53,7 @@ if ($x > 10) {
 - `is_object()`
 - `is_null()`
 - `gettype()`
+- `instanceof`
 
 [String](./strings/)
 [Numbers](./numbers/)
