@@ -6,7 +6,7 @@ Variables in php are always assigned by value.
 
 You can also use '&' to assign a variable by reference. Example:
 
-```sh
+```php
 $interest_rate = 5.2;
 $temp_interest_rate = &$interest_rate;
 
