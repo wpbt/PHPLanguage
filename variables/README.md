@@ -27,7 +27,7 @@ Note: you can use `global` keyword to access the top level global scoped variabl
 ```sh
 $var1 = 'xyz';
 $var2 = 'abc';
-function someFunction() {
+function some_function() {
     global $a, $b;
     // now you can access the top-level variable within this function.
     # You can also use $GLOBALS array to access them.
@@ -39,7 +39,7 @@ function someFunction() {
 - You can also use `static` keyword to create a variable that won't lose it's value when program leaves it's scope. Example:
 
 ```sh
-function getCount() {
+function get_count() {
     static $count = 0;
     echo $count;
     $count++;
