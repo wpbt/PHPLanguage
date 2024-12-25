@@ -80,3 +80,6 @@ echo  $Name; // Error: Undefined variable
 - For classes, use _CamelCase_ technique (you can use \_ to separate words).
 - For constants, use _UPPER_CASE_ convention.
 - For functions, use _functionName_ convention.
+
+[Home](../)
+[Next](../types/)
