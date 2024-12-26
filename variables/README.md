@@ -1,10 +1,16 @@
 # Variables in PHP
 
-`$this` is a special variable in PHP that cannot be assigned a value and is used within class methods to refer to the current instance of the class.
+- Variables in PHP are used to store data that can be manipulated and used throughout a script. They act as containers for different types of values such as numbers, strings, arrays, or objects.
 
-Variables in php are always assigned by value.
+- `$this` is a special variable in PHP that cannot be assigned a value and is used within class methods to refer to the current instance of the class.
 
-You can also use '&' to assign a variable by reference. Example:
+  - $this can be used to access properties or call methods of the class from within class methods.
+  - $this is only available within non-static methods of a class.
+  - Trying to assign a value to $this will result in a fatal error.
+
+- Variables in php are always assigned by value.
+
+- You can also use '&' to assign a variable by reference. Example:
 
 ```php
 $interest_rate = 5.2;
@@ -13,7 +19,21 @@ $temp_interest_rate = &$interest_rate;
 # now changing $temp_interest_rate would change the $interest_rate variable as well.
 ```
 
-It's always a good practice to assign a default value to a variable.
+- It's always a good practice to assign a default value to a variable.
+
+## Variable Declaration
+
+- In PHP, variables start with a dollar sign **($)**.
+- After **$**, you can't use number.
+- You can only use : **Aa-Zz, 0-9, and \_ (underscore)** in a variable name.
+- **Tip:** use meaningful names to declare variables and indent properly for readability.
+- Always stick to same naming convention throughout the project.
+- Some common naming conventions:
+- CamelCase / camelCase
+- snake_case / Snake_Case
+- For classes, use _CamelCase_ technique (you can use \_ to separate words).
+- For constants, use _UPPER_CASE_ convention.
+- For functions, use _functionName_ convention.
 
 ## Variable Scope
 
@@ -24,26 +44,33 @@ In PHP there are two scopes:
 
 Note: you can use `global` keyword to access the top level global scoped variables within the function. Example:
 
-```sh
+```php
 $var1 = 'xyz';
 $var2 = 'abc';
 function some_function() {
-    global $a, $b;
-    // now you can access the top-level variable within this function.
-    # You can also use $GLOBALS array to access them.
-    $a = $GLOBALS['var1'];
-    $b = $GLOBALS['var2'];
+    global $var1, $var2;
+    // now you can access the top-level variables within this function.
+    // You can also use $GLOBALS array to access them.
+    $a = $var1;
+    // best practice is not to modify the global variable directly.
+    // instead, copy the global variable in local scope to a different variable and modify that variable (local).
+    $b = $var2;
 }
 ```
 
-- You can also use `static` keyword to create a variable that won't lose it's value when program leaves it's scope. Example:
+- You can also use `static` keyword to create a variable that won't lose it's value when program leaves it's scope.
+  - When you declare a variable as static, it retains its value between function calls.
+  - Unlike local variables that get reinitialized each time the function is called, a static variable is initialized only once, at the first call to the function.
 
-```sh
+```php
 function get_count() {
     static $count = 0;
     echo $count;
     $count++;
 }
+get_count(); // Outputs: 0
+get_count(); // Outputs: 1
+get_count(); // Outputs: 2
 ```
 
 - Just one note regarding `static` variable: you shouldn't assign a dynamic expression as it's value because the static declarations are resolved in compile time.
@@ -103,3 +130,14 @@ Examples:
 - `unset` — Unset a given variable
 - `var_dump` — Dumps information about a variable
 - `var_export` — Outputs or returns a parsable string representation of a variable
+
+## Variable Variables
+
+- In PHP, you can create a variable whose name is stored in another variable.
+
+```php
+$box = "gift";
+$$box = "flowers";
+
+echo $gift; // Outputs: flowers
+```

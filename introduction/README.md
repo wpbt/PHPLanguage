@@ -67,19 +67,5 @@ echo  $Name; // Error: Undefined variable
 
 - PHP can coexist with HTML. You can write PHP directly in an HTML file for dynamic content.
 
-## Variable Declaration
-
-- In PHP, variables start with a dollar sign **($)**.
-- After **$**, you can't use number.
-- You can only use : **Aa-Zz, 0-9, and \_ (underscore)** in a variable name.
-- **Tip:** use meaningful names to declare variables and indent properly for readability.
-- Always stick to same naming convention throughout the project.
-- Some common naming conventions:
-- CamelCase / camelCase
-- snake_case / Snake_Case
-- For classes, use _CamelCase_ technique (you can use \_ to separate words).
-- For constants, use _UPPER_CASE_ convention.
-- For functions, use _functionName_ convention.
-
 [Home](../)
 [Next](../types/)
