@@ -62,6 +62,7 @@ echo $scientific; // Output: 1200
   - `sin(), cos(), tan()`: Trigonometric functions.
   - `exp($num)`: Exponential function.
   - `intdiv()`: Returns the integer quotient of the division
+  - `number_format()`: Formats a number with grouped thousands.
 
 ## Type Casting
 
