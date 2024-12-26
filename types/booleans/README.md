@@ -22,7 +22,7 @@ $isFalse = false; // Boolean false
 - Falsy Values:
   - false
   - 0 (zero)
-  - '' / "" (empty string)
+  - '', "" (empty string)
   - []
   - null
   - "0" (string with the character zero)
