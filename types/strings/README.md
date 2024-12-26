@@ -129,3 +129,9 @@ TEXT;
   - Encoding: If you output binary data directly to a web page, it might break the page. Use base64_encode() to safely convert binary data to text.
   - String Manipulation Functions: Be cautious using string manipulation functions like strlen(), substr(), or strpos() on binary data. While they work, they might interpret certain byte sequences in unexpected ways.
   - Storage: When storing binary data in a database, use a proper binary-safe column type like BLOB to avoid data corruption.
+
+## Security Considerations
+
+- SQL Injection: Always sanitize or use prepared statements when inserting strings into SQL queries.
+- XSS: Be cautious when outputting strings to HTML without proper escaping.
+- Concept is: never trust users. Sanitize and validate user input always!
