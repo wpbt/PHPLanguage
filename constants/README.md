@@ -1,12 +1,13 @@
 # Constants in PHP
 
+- Constants never change throughout the execution of the program.
 - You can use `const` or `define()` to define constants.
 - You can also use `constant()` to retrieve the constant value.
 - The scope of a constant is global.
 
 Example:
 
-```sh
+```php
 const PI = 3.1415;
 define( 'RADIUS', 2.5 );
 echo PI;
@@ -25,6 +26,12 @@ define('ANIMALS', array(
 echo ANIMALS[1]; // outputs "cat"
 
 ```
+
+## Characteristics of Constants
+
+- Once defined, the value of a constant cannot be changed.
+- Constants are automatically global and can be used anywhere in the script after they are defined, even inside functions without the need for the `global` keyword.
+- Unlike variables, constants do not start with a `$`.
 
 ## Some functions related to constants:
 
@@ -55,3 +62,10 @@ These contants behave based on their location of use.
 - `__METHOD__`
 - `__TRAIT__`
 - `__NAMESPACE__`
+
+## Best Practices
+
+- Use Constants for Configuration: Constants are perfect for configuration values that shouldn't change during runtime, like database connection details or API keys.
+- Avoid Magic Numbers: Use named constants instead of hard-coded values to improve code readability and maintainability.
+- Class Constants for Enumerations: Use class constants when you need to define a set of related, unchangeable values.
+- Security: Constants can be used to store sensitive information since they can't be altered once set.
