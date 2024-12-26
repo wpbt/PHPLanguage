@@ -55,7 +55,4 @@ if ($x > 10) {
 - `gettype()`
 - `instanceof`
 
-[String](./strings/)
-[Numbers](./numbers/)
-[Arrays](./arrays/)
-[Booleans](./booleans/)
+[String](./strings/) | [Numbers](./numbers/) | [Arrays](./arrays/) | [Booleans](./booleans/) | [Others](./other/)
