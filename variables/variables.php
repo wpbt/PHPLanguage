@@ -56,3 +56,9 @@ echo PHP_EOL;
 // the global data is 'in-tact'.
 echo $global_var;
 echo PHP_EOL;
+
+$interest_rate = 5.2;
+$temp_interest_rate = &$interest_rate;
+$temp_interest_rate = 8.95;
+echo $interest_rate;
+echo PHP_EOL;
