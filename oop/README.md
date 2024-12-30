@@ -5,6 +5,7 @@
 - Objects contain
   - data in the form of fields (aka properties/variables)
   - code in the form of procedures (aka methods/functions).
+- Think of objects as real world entities which have specific properties and behavior. Those objects will interact in the application in some way.
 
 ## Classes
 
@@ -15,6 +16,25 @@
 
 - An instance of a class.
 - An object is unique.
+
+```php
+class Car {
+    public $color;
+    public $model;
+
+    public function __construct($color, $model) {
+        $this->color = $color;
+        $this->model = $model;
+    }
+
+    public function drive() {
+        return "Driving a $this->color $this->model.";
+    }
+}
+
+$my_car = new Car("red", "Toyota");
+echo $my_car->drive();
+```
 
 ## Benefits of OOP
 
