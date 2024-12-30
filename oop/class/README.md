@@ -170,7 +170,7 @@ echo ChildExample::PUBLIC_CONSTANT; // Outputs: new public value
 - A constructor can take multiple parameters to initialize various properties of the object.
 - Constructors can also have parameters with default values, allowing you to create objects with default or optional initialization.
 - If you set the `__construct()` as private, you can't initialize the class using `new`.
-  - You can use a method insie the class to return the object.
+  - You can use a method inside the class to return the object.
   - This concept is implemented in Singleton of Factory design pattern.
   - You can control how and when the objects are created.
   - Centralizes the initialization logic in one place.

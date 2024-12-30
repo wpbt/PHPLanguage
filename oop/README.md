@@ -44,6 +44,22 @@ echo $my_car->drive();
 - Abstraction: Simplifies complex functionality by introducing simple interfaces to carry out tasks, making it easier to work with and understand the underlying system.
 - Polymorphism: Allows you to call different methods or functions using the same interface, enabling a single function to operate on different data types or classes. This makes the code more flexible and scalable.
 
+## Oerview of Object Oriented in PHP
+
+- Defining a class
+- Creating objects
+- Setting visibility on property, methods, and constants inside class.
+- Class constants
+- Accessing property and methods
+- Scope resolution operator (::)
+- Magic methods in class (`__construct, __destruct, ...`)
+- Inheritance using `extends`
+- Static classes and methods
+- Abstract classes
+- Interface & Traits
+- Concept of late static binding
+- Preventing overriding (and extending) using `final` keyword.
+
 ## Further Topics
 
 [Class](./class/) -> [Inheritance](./inheritance/)
