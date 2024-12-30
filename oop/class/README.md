@@ -189,8 +189,12 @@ echo ChildExample::PUBLIC_CONSTANT; // Outputs: new public value
 - **Protected:** Accessible within the class and its subclasses.
 - **Private:** Accessible only within the class, not in subclasses.
 - **final:**
-  - Properties/Methods/Constants: Prevents overriding.
+  - Methods/Constants: Prevents overriding.
   - Classes: Prevents extending.
+  - Note: 'final' doesn't apply to 'properties'.
+  - It is often used when you want to lock the implementation of a class and ensure that no one can alter its behavior by extending it.
+  - This is especially useful in critical classes where changes to the implementation could break functionality (e.g., security components, core library classes).
+  - We can use final with an abstract class's methods to prevent them from being overridden once implemented in a subclass. Abstract methods cannot be final because they must be implemented in a subclass.
 
 ## Constructor
 

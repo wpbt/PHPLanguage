@@ -88,3 +88,45 @@ print_r( $obj1 );
 echo "\n";
 print_r( $obj2 );
 echo "\n";
+
+/**
+ * 'final' keyword can be used to prevent overriding (methods & constants).
+ * In case of 'final' class, the class can't be extended.
+ * you can't use 'final' in properties!
+ */
+
+final class MyStrictClass {
+    // properties and methods ...
+}
+
+// extending MyStrictClass will trigger a fetal error!
+// class MyNewClass extends MyStrictClass {} // this is an error!
+
+class DemoParentClass {
+    final public function say_hello() {
+        return "Hello from ParentClass!";
+    }
+}
+
+class DemoChildClass extends DemoParentClass {
+    // Attempting to override this method will cause an error:
+    /* public function say_hello() {} */
+}
+
+abstract class DemoFinalAbstractClass {
+    final public function fixed_behavior() {
+        return "This behavior cannot be overridden.";
+    }
+}
+
+// Any subclass cannot override fixedBehavior():
+class DemoConcreteClass extends DemoFinalAbstractClass {
+
+    // inside this sub-class:
+    // you can call the fixedBehavior()
+    // but you can't override it!
+
+    /* public function fixed_behavior() {} */
+}
+
+
