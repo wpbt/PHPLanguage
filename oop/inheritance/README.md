@@ -66,4 +66,4 @@ $object = ProductA::create();
 echo get_class($object); // Outputs: ProductA
 ```
 
-- Here, the `create()` method uses static to ensure that the correct class (ProductA) is instantiated at runtime. If `self` were used, it would always instantiate Factory.
+- Here, the `create()` method uses `static` to ensure that the correct class (ProductA) is instantiated at runtime. If `self` were used, it would always instantiate Factory class.
