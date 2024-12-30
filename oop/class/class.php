@@ -20,4 +20,71 @@
 
 $example = new Example( 'John Doe', 18, array( 1, 'two' ), 12 );
 print_r( $example );
+echo PHP_EOL;
 
+
+/**
+ * Readonly class!
+ */
+readonly class ReadOnlyClass {
+    public string $name;
+    // private $id; // if no type is specified, a fetal error is thrown!
+    // public static int $count; // static is not allowed!
+
+    public function __construct( string $name ) {
+        $this->name = $name;
+    }
+    public function get_name(): string {
+        return $this->name;
+    }
+}
+$readonly_obj = new ReadOnlyClass( 'Some Value' );
+print_r( $readonly_obj );
+/**
+ * setting a property dynamically will result in error!
+ */
+// $readonly_obj->some_prop = 'Different val'; // this line will throw an error!
+echo "\n";
+
+/**
+ * Extending readonly class!
+ * 
+ * child class should also be a 'readonly' class.
+ */
+readonly class SubReadOnlyClass extends ReadOnlyClass {
+    public function __construct( string $name ) {
+        parent::__construct( $name );
+    }
+}
+$sub_readonly_obj = new SubReadOnlyClass( 'some val' );
+print_r( $sub_readonly_obj );
+echo PHP_EOL;
+
+/**
+ * Creating objects
+ */
+
+class Test {
+    private int $id;
+
+    private function __construct() {
+        $this->id = 12346;
+    }
+
+    // technique 1
+    public static function get_new() {
+        return new static();
+    }
+
+    // technique 2
+    public static function get_instance() {
+        return new self();
+    }
+
+}
+$obj1 = Test::get_new();
+$obj2 = Test::get_instance();
+print_r( $obj1 );
+echo "\n";
+print_r( $obj2 );
+echo "\n";

@@ -25,10 +25,10 @@ class  ClassName {
 class  MainClass {
     $prop = 'a default value';
     // method declaration
-    public  function  getProp() {
-        // accessing the property.
-        // you can also use it to access the methods like: $this->methodName();
+    public  function  get_prop() {
         echo  $this->prop;
+        // Access object method like:
+        // $this->methodName();
     }
 }
 ```
@@ -43,11 +43,26 @@ class  MainClass {
 $obj = new  ClassName(); // or new ClassName;
 ```
 
+## Techniques to create class objects
+
+- In the class context, it is possible to create a new object by new self and new parent.
+
+```php
+class Test {
+    private function __construct() {}
+
+    public static function get_new() {
+        return new static();
+    }
+}
+$obj = Test::get_new();
+```
+
 ## Class Properties
 
 - **Visibility Modifiers:** Class properties can be declared with visibility modifiers (`public`, `protected`, or `private`) to control access levels.
 - **Static and Readonly:** Properties can be marked as `static` (shared across all instances of the class) or `readonly` (available from PHP 8.1, can only be initialized once).
-- **Typed Properties:** You can declare the type of a property (`string`, `int`, `array`, etc.) starting from PHP 7.4.
+- **Typed Properties:** You can declare the type of a property (`string`, `int`, `array`, `ClassName`) starting from PHP 7.4.
 - **Initialization Requirement:** Typed properties must be initialized before accessing them; otherwise, a fatal error will be thrown.
 - **Avoid Function Calls:** When initializing properties, avoid using function calls to ensure predictable behavior.
 
@@ -109,6 +124,20 @@ var_dump(isset($example->dynamicProperty)); // Using __isset(), Outputs: bool(tr
 unset($example->dynamicProperty); // Using __unset()
 var_dump(isset($example->dynamicProperty)); // Using __isset(), Outputs: bool(false)
 
+```
+
+## Readonly Class
+
+- Available on PHP 8.2.0
+- `readonly` class will not allow to add properties/methods dynamically.
+- you must specify the type of the property as well.
+- A readonly class can't have static properties.
+- A readonly class can be extended if, and only if, the child class is also a readonly class.
+
+```php
+readonly class ClassName {
+    private int $id;
+}
 ```
 
 ## Class Constants

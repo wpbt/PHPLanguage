@@ -62,4 +62,4 @@ echo $my_car->drive();
 
 ## Further Topics
 
-[Class](./class/) -> [Inheritance](./inheritance/)
+[Class](./class/) | [Inheritance](./inheritance/)
