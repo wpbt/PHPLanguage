@@ -116,6 +116,8 @@ function fopen() {
 
 ## Declaring sub-namespaces
 
+- Following example creates a sub level namespace.
+
 ```php
 namespace MyProject\Sub\Level;
 
