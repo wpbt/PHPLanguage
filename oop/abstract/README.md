@@ -52,6 +52,7 @@ echo "\n";
   - can't have multiple inheritance.
 - Interfaces:
   - A class can implement multiple interfaces.
+  - Interfaces can't define concrete methods. They just declare a method.
 
 ## Rules and Restrictions
 
