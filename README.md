@@ -13,7 +13,7 @@ My primary goal is to be able to revise the PHP language without wasting too muc
 - [Operators](./operators/)
 - [Control Structures](./control_structures/)
 - [Functions](./functions/)
-- [Classes & Objects](./oop): [Classes](./oop/class/) | [Inheritance](./oop/inheritance/) | [Abstract Classes](./oop/abstract/) | [Interfaces](./oop/interfaces/) | [Traits](./oop/traits/)
+- [Classes & Objects](./oop): [Classes](./oop/class/) | [Inheritance](./oop/inheritance/) | [Abstract Classes](./oop/abstract/) | [Interfaces](./oop/interfaces/) | [Traits](./oop/traits/) | [Static](./oop/static/)
 - [Namespaces](./namespaces/)
 - [Exceptions](./exceptions/)
 - [Generators](./generators/)
